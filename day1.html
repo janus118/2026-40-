@@ -282,6 +282,36 @@
   @media (max-width:700px){
     .response{ white-space:normal; }
   }
+
+  .cta-wrap{
+    display:flex;
+    justify-content:center;
+    padding:4px 2px 26px;
+  }
+  .cta-btn{
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    background:linear-gradient(180deg, #d9b578, var(--gold));
+    color:#2b2109;
+    font-weight:700;
+    font-size:13.5px;
+    letter-spacing:.02em;
+    text-decoration:none;
+    padding:12px 26px;
+    border-radius:999px;
+    box-shadow:0 8px 20px rgba(205,161,95,.35);
+    transition:transform .15s ease, box-shadow .15s ease;
+  }
+  .cta-btn:hover{
+    transform:translateY(-1px);
+    box-shadow:0 10px 24px rgba(205,161,95,.45);
+  }
+  .cta-btn .arrow{
+    font-size:15px;
+    transition:transform .2s ease;
+  }
+  .cta-btn:hover .arrow{ transform:translateX(3px); }
   .response .amen{ color:var(--ember); font-weight:600; }
 
   /* ---- CTA footer ---- */
@@ -340,9 +370,22 @@
     outline-offset:3px;
   }
 
-  @media (max-width:380px){
-    .watch-title{ font-size:24px; }
-    .body{ padding:22px 20px 26px; }
+  @media (max-width:600px){
+    html,body{ padding:0; align-items:flex-start; }
+    .card{ max-width:100%; border-radius:0; box-shadow:none; min-height:100vh; }
+    .watch{ height:auto; padding-bottom:20px; }
+    .watch-eyebrow{
+      flex-direction:column;
+      align-items:flex-start;
+      gap:4px;
+      letter-spacing:.06em;
+      font-size:11px;
+      padding:20px 20px 0;
+    }
+    .watch-eyebrow .day{ white-space:nowrap; }
+    .watch-title{ font-size:23px; padding:12px 20px 0; line-height:1.4; }
+    .watch-sub{ font-size:12px; padding:8px 20px 0; }
+    .body{ padding:22px 20px 30px; }
   }
 </style>
 </head>
@@ -420,6 +463,12 @@
     <div class="divider"></div>
 
     <p class="response">愿我们今天诚实面对心中的偶像，为自己的光景真实哀恸，一心归向神，在祂里面得着更新与力量。<span class="amen">阿们！</span></p>
+
+    <div class="cta-wrap">
+      <a class="cta-btn" href="https://docs.google.com/document/d/1k-B1tAgM43InoNoIWdHG5LkY0Ujf3svwcScoPH9qfjY/edit?usp=sharing" target="_blank" rel="noopener">
+        查看完整40天祷告手册 <span class="arrow">→</span>
+      </a>
+    </div>
 
   </div>
 
