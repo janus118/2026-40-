@@ -208,12 +208,12 @@
     display:flex;
     justify-content:space-between;
     position:relative;
-    padding:6px 4px 0;
+    padding:10px 4px 0;
   }
   .timeline::before{
     content:"";
     position:absolute;
-    left:22px; right:22px; top:20px;
+    left:22px; right:22px; top:16px;
     height:1px;
     background:linear-gradient(90deg, var(--gold), var(--ember), var(--indigo));
     opacity:.4;
@@ -230,6 +230,14 @@
     border:2px solid var(--gold);
     margin:0 auto 10px;
     position:relative; z-index:2;
+  }
+  .tl-caption{
+    position:absolute;
+    top:-38px; left:0; right:0;
+    font-size:13px;
+    font-weight:700;
+    color:var(--ink);
+    text-align:center;
   }
   .tl-time{
     font-family:"IBM Plex Mono", monospace;
@@ -414,7 +422,13 @@
         <div class="tl-node">
           <div class="tl-dot"></div>
           <div class="tl-time">6PM</div>
-          <div class="tl-names">Bing Kuang</div>
+          <div class="tl-names">Alex Dai · Bing Kuang<br>何牧师 & 师母</div>
+        </div>
+        <div class="tl-node">
+          <div class="tl-caption">克己</div>
+          <div class="tl-dot"></div>
+          <div class="tl-time">全日</div>
+          <div class="tl-names">Wen Yang (零食)</div>
         </div>
       </div>
     </div>
