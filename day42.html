@@ -358,7 +358,7 @@
   .divider{
     height:1px;
     background:repeating-linear-gradient(90deg, var(--line) 0 6px, transparent 6px 12px);
-    margin:22px 0;
+    margin:10px 0;
   }
 
   .response{
@@ -430,8 +430,8 @@
   }
 
   @media (max-width:600px){
-    html,body{ padding:0; align-items:flex-start; }
-    .card{ max-width:100%; border-radius:0; box-shadow:none; min-height:100vh; }
+    html,body{ padding:0; align-items:flex-start; min-height:0; }
+    .card{ max-width:100%; border-radius:0; box-shadow:none; min-height:0; }
     .watch{ height:auto; padding-bottom:20px; }
     .watch-eyebrow{
       flex-direction:column;
@@ -501,7 +501,7 @@
       </div>
     </div>
 
-    <div class="section">
+    <div class="section" style="margin-bottom:12px;">
       <div class="section-label"><span class="mark"></span>今日诗歌</div>
       <div class="song-row">
         <div class="song-info"><span class="name">《成为祝福》</span></div>
